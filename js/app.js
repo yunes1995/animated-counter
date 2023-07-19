@@ -1,21 +1,23 @@
 let x = 0;
 const y = 100;
-const countOfScroll = window.scrollY;
+let starPositon = false;
 
 const getNumberOne = document.getElementById("numberOne");
 const getNumberTwo = document.getElementById("numberTwo");
 const getNumberThree = document.getElementById("numberThree");
 const getNumberFour = document.getElementById("numberFour");
 
+addEventListener("scroll", () => {
+    console.log(window.scrollY);
+    if(window.scrollY > 650){
+        if(starPositon == false){
+            myInterval = setInterval(counterNumber, 100);
+        }
+        starPositon = true;
+    }
+})
 
-if(window.scrollY > 500){
-    alert("hi")
-}
-
-myInterval = setInterval(counterNumber, 100);
-
-
-function counterNumber(){
+function counterNumber() {
 
     x++;
     getNumberOne.innerText = x;
@@ -23,19 +25,9 @@ function counterNumber(){
     getNumberThree.innerText = x;
     getNumberFour.innerText = x;
 
-   if(x == 100){
-    clearInterval(myInterval);
-   }
+    if (x == y) {
+        clearInterval(myInterval);
+        return;
+    }
 }
 
-
-
-
-function test (){
-    console.log(screenPosition);
-}
-
-// getNumberOne.innerText = "yunes";
-// getNumberTwo.innerText = "ali";
-// getNumberThree.innerText = "aksd";
-// getNumberFour.innerText = "yu";
