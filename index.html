@@ -1,313 +1,310 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Animated Counter</title>
-		<!-- Description, Keywords and Author -->
-		<meta name="description" content="Your description">
-		<meta name="keywords" content="Your,Keywords">
-		<meta name="author" content="ResponsiveWebInc">
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<!-- Styles -->
-		<!-- Bootstrap CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<!-- Font awesome CSS -->
-		<link href="css/font-awesome.min.css" rel="stylesheet">		
-		<!-- Custom CSS -->
-		<link href="css/style.css" rel="stylesheet">
-		
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="#">
-	</head>
-	
-	<body>
-		<div class="wrapper">
-			<!-- header -->
-			<header>
-				<!-- navigation -->
-				<nav class="navbar navbar-default" role="navigation">
-					<div class="container">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<a class="navbar-brand" href="#"><img class="img-responsive" src="img/logo.png" alt="Logo" /></a>
-						</div>
 
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav">
-								<li class="active"><a href="index.html">Benefits</a></li>
-								<li><a href="index.html">Blogs</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">How It Works <span class="caret"></span></a>
-									<ul class="dropdown-menu" role="menu">
-										<li><a href="#">Action</a></li>
-										<li><a href="#">Another action</a></li>
-										<li><a href="#">Something else here</a></li>
-										<li class="divider"></li>
-										<li><a href="#">Separated link</a></li>
-										<li class="divider"></li>
-										<li><a href="#">One more separated link</a></li>
-									</ul>
-								</li>
-								<li><a href="login.html">Login</a></li>
-								<li><a href="registration.html">Resister</a></li>
-							</ul>
-							<form class="navbar-form navbar-right" role="search">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Search">
-								</div>
-							</form>
-						</div><!-- /.navbar-collapse -->
-					</div><!-- /.container-fluid -->
-				</nav>
-			</header>
-			
-			<!-- main content -->
-			<div class="main-content bottom-0">
+<head>
+	<meta charset="utf-8">
+	<title>Animated Counter</title>
+	<!-- Description, Keywords and Author -->
+	<meta name="description" content="Your description">
+	<meta name="keywords" content="Your,Keywords">
+	<meta name="author" content="ResponsiveWebInc">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Styles -->
+	<!-- Bootstrap CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font awesome CSS -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="#">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- header -->
+		<header>
+			<!-- navigation -->
+			<nav class="navbar navbar-default" role="navigation">
 				<div class="container">
-					<!-- banner -->
-					<div class="banner pad">
-						<!-- heading -->
-						<h2>This is Place of<br><span>Secure. &amp; Peace.</span></h2>
-						<!-- paragraph -->
-						<p>Get your things secure and take your mind in peace!!!</p>
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img class="img-responsive" src="img/logo.png"
+								alt="Logo" /></a>
 					</div>
-				</div>
-				
-				<!-- hero -->
-				<div class="hero pad">
-					<div class="container">
-						<div class="hero-content">
-							<!-- heading -->
-							<h2>Get ready for peacefully zone</h2>
-							<!-- paragraph -->
-							<p>Secure Everything with prelog.</p>
-							<!-- button -->
-							<a href="#" class="btn btn-warning">Explore Things</a>
-						</div>
-					</div>
-				</div>
-				
-				<!-- benefits -->
-				<div class="benefits pad">
-					<div class="container">
-						<div class="default-heading">	
-							<!-- heading -->
-							<h2>Our Benefits</h2>
-						</div>
-						<div class="row">
-							<div class="col-md-3 col-sm-6">
-								<!-- benefits item -->
-								<div class="benefits-item">
-									<!-- icon -->
-									<i class="fa fa-desktop"></i>
-									<!-- heading -->
-									<h3>Desktop <b class="num" id="numberOne">0</b></h3>
-									<!-- paragraph -->
-									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<!-- benefits item -->
-								<div class="benefits-item">
-									<!-- icon -->
-									<i class="fa fa-paper-plane"></i>
-									<!-- heading -->
-									<h3>Telegram <b class="num" id="numberTwo">0</b></h3>
-									<!-- paragraph -->
-									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<!-- benefits item -->
-								<div class="benefits-item">
-									<!-- icon -->
-									<i class="fa fa-briefcase"></i>
-									<!-- heading -->
-									<h3>Stock <b class="num" id="numberThree">0</b></h3>
-									<!-- paragraph -->
-									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<!-- benefits item -->
-								<div class="benefits-item">
-									<!-- icon -->
-									<i class="fa fa-envelope"></i>
-									<!-- heading -->
-									<h3>Packaging <b class="num" id="numberFour">0</b></h3>
-									<!-- paragraph -->
-									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- call to action -->
-				<div class="cta">
-					<div class="container">
-						<div class="cta-content">
-							<!-- heading -->
-							<h3>Don't Feel Insecure with <span>PRELOG</span></h3>
-							<!-- paragraph -->
-							<p>Tales from those who follow the prelog way wherever it leads</p>
-						</div>
-					</div>
-				</div>
-				
-				<!-- testimonial -->
-				<div class="testimonial">
-					<div class="container">
-						<div id="carousel-generic" class="carousel slide" data-ride="carousel">
 
-							<!-- Wrapper for slides -->
-							<div class="carousel-inner">
-								<div class="item active pad">
-									<!-- heading -->
-									<h3>-@Himanshu</h3>
-									<!-- paragraph -->
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-								</div>
-								<div class="item pad">
-									<!-- heading -->
-									<h3>-@Avijit Sha</h3>
-									<!-- paragraph -->
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-								</div>
-								<div class="item pad">
-									<!-- heading -->
-									<h3>-@Sashi Kumar</h3>
-									<!-- paragraph -->
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-								</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="index.html">Benefits</a></li>
+							<li><a href="index.html">Blogs</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">How It Works <span
+										class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+									<li class="divider"></li>
+									<li><a href="#">One more separated link</a></li>
+								</ul>
+							</li>
+							<li><a href="https://github.com/yunes1995" target="_blank">My Github</a></li>
+							<li><a href="registration.html">My Linkedin</a></li>
+						</ul>
+						<form class="navbar-form navbar-right" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
 							</div>
+						</form>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+		</header>
 
-							<!-- Controls -->
-							<a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
-								<span class="fa fa-chevron-left"></span>
-							</a>
-							<a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
-								<span class="fa fa-chevron-right"></span>
-							</a>
-						</div>
-					</div>
+		<!-- main content -->
+		<div class="main-content bottom-0">
+			<div class="container">
+				<!-- banner -->
+				<div class="banner pad">
+					<!-- heading -->
+					<h2>This is Place of<br><span>DWD Team</span></h2>
+					<!-- paragraph -->
+					<p>Diamond Web Design</p>
 				</div>
-				
-				<!-- blog -->
-				<div class="blog pad">
-					<div class="container">
-						<div class="default-heading">	
-							<!-- heading -->
-							<h2>Our Blogs</h2>
-						</div>
-						<div class="row">
-							<div class="col-md-6">
-								<!-- blog entry -->
-								<div class="entry">
-									<!-- blog post image -->
-									<div class="entry-pic">
-										<img class="img-responsive" src="img/blog/1.jpg" alt="Blog Image" />
-									</div>
-									<!-- blog content details -->
-									<div class="entry-post">
-										<!-- blog information -->
-										<span class="meta">Lorem Ipsum Passage</span>
-										<!-- blog title -->
-										<h3>Neque porro quisquam est qui dolorem</h3>
-										<!-- paragraph -->
-										<p>Duis aute irure dolor in repreh enderit in volu ptate velit esse cillum dolore eu fugiat nulla pariatur. Excep teur sint occaecat cupidatat non proident tate velit esse cillum dolore.</p>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<!-- blog entry -->
-								<div class="entry">
-									<!-- blog post image -->
-									<div class="entry-pic">
-										<img class="img-responsive" src="img/blog/2.jpg" alt="Blog Image" />
-									</div>
-									<!-- blog content details -->
-									<div class="entry-post">
-										<!-- blog information -->
-										<span class="meta">Lorem Ipsum Passage</span>
-										<!-- blog title -->
-										<h3>Neque porro quisquam est qui dolorem</h3>
-										<!-- paragraph -->
-										<p>Duis aute irure dolor in repreh enderit in volu ptate velit esse cillum dolore eu fugiat nulla pariatur. Excep teur sint occaecat cupidatat non proident tate velit esse cillum dolore.</p>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6">
-								<!-- blog entry -->
-								<div class="entry">
-									<!-- blog post image -->
-									<div class="entry-pic">
-										<img class="img-responsive" src="img/blog/3.jpg" alt="Blog Image" />
-									</div>
-									<!-- blog content details -->
-									<div class="entry-post">
-										<!-- blog information -->
-										<span class="meta">Lorem Ipsum Passage</span>
-										<!-- blog title -->
-										<h3>Neque porro quisquam est qui dolorem</h3>
-										<!-- paragraph -->
-										<p>Duis aute irure dolor in repreh enderit in volu ptate velit esse cillum dolore eu fugiat nulla pariatur. Excep teur sint occaecat cupidatat non proident tate velit esse cillum dolore.</p>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<!-- blog entry -->
-								<div class="entry">
-									<!-- blog post image -->
-									<div class="entry-pic">
-										<img class="img-responsive" src="img/blog/4.jpg" alt="Blog Image" />
-									</div>
-									<!-- blog content details -->
-									<div class="entry-post">
-										<!-- blog information -->
-										<span class="meta">Lorem Ipsum Passage</span>
-										<!-- blog title -->
-										<h3>Neque porro quisquam est qui dolorem</h3>
-										<!-- paragraph -->
-										<p>Duis aute irure dolor in repreh enderit in volu ptate velit esse cillum dolore eu fugiat nulla pariatur. Excep teur sint occaecat cupidatat non proident tate velit esse cillum dolore.</p>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-						</div>
-						<div class="blog-btn">
-							<!-- button -->
-							<a href="#" class="btn btn-warning">Read More Blogs</a>
-						</div>
-					</div>
-				</div>
-				
 			</div>
-			
-			<!-- footer -->
-			<footer>
+
+			<!-- hero -->
+			<div class="hero pad">
 				<div class="container">
-					<!-- This theme comes under Creative Commons Attribution 4.0 Unported. So don't remove below link back -->
-					<p class="copy-right">Copyright &copy; 2014 <a href="#">Your Site</a> | Designed By : <a href="http://www.indioweb.in/portfolio">IndioWeb</a>, All rights reserved. </p>
+					<div class="hero-content">
+						<!-- heading -->
+						<h2>Leave your projects to us</h2>
+						<!-- paragraph -->
+						<p>Have the best projects with us.</p>
+						<!-- button -->
+						<a href="https://www.linkedin.com/in/yunes-mohammadi-b58613233/" target="_blank"
+							class="btn btn-warning">Find me</a>
+					</div>
 				</div>
-			</footer>
-		</div>		
-		
-        
-        <script src="js/app.js"></script>
-	</body>	
+			</div>
+
+			<!-- benefits -->
+			<div class="benefits pad">
+				<div class="container">
+					<div class="default-heading">
+						<!-- heading -->
+						<h2>Progress rate :</h2>
+					</div>
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<!-- benefits item -->
+							<div class="benefits-item">
+								<!-- icon -->
+								<i class="fa fa-desktop"></i>
+								<!-- heading -->
+								<h3>Workimg <b class="num" id="numberOne">0</b> %</h3>
+								<!-- paragraph -->
+								<p>Amount of work on projects.</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<!-- benefits item -->
+							<div class="benefits-item">
+								<!-- icon -->
+								<i class="fa fa-paper-plane"></i>
+								<!-- heading -->
+								<h3>Social network <b class="num" id="numberTwo">0</b> %</h3>
+								<!-- paragraph -->
+								<p>The rate of progress in social work networks.</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<!-- benefits item -->
+							<div class="benefits-item">
+								<!-- icon -->
+								<i class="fa fa-briefcase"></i>
+								<!-- heading -->
+								<h3>Learning <b class="num" id="numberThree">0</b> %</h3>
+								<!-- paragraph -->
+								<p>The amount of learning in the field of programming.</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<!-- benefits item -->
+							<div class="benefits-item">
+								<!-- icon -->
+								<i class="fa fa-envelope"></i>
+								<!-- heading -->
+								<h3>giving work <b class="num" id="numberFour">0</b> %</h3>
+								<!-- paragraph -->
+								<p>The amount of effort to get jobs related to programming.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- call to action -->
+			<div class="cta">
+				<div class="container">
+					<div class="cta-content">
+						<!-- heading -->
+						<h3>Pay attention to this point :</h3>
+						<!-- paragraph -->
+						<p>You have to work hard to reach the final progress</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- testimonial -->
+			<div class="testimonial">
+				<div class="container">
+					<div id="carousel-generic" class="carousel slide" data-ride="carousel">
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active pad about-me-text">
+								<!-- heading -->
+								<h3>Yunes Mohammadi : </h3>
+								<!-- paragraph -->
+								<p>I am Yunes Mohammadi, born in 1995, from Iran and the city of Kermanshah.
+									Im web developer. My academic field is software engineer.
+									Im interested in art and management.
+									I have idea oriented and like to discover new things.</p>
+							</div>
+							
+						</div>
+
+						<!-- Controls -->
+						<a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
+							<span class="fa fa-chevron-left"></span>
+						</a>
+						<a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
+							<span class="fa fa-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- blog -->
+			<div class="blog pad">
+				<div class="container">
+					<div class="default-heading">
+						<!-- heading -->
+						<h2>Other My projects</h2>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<!-- blog entry -->
+							<div class="entry">
+								<!-- blog post image -->
+								<div class="entry-pic">
+									<img class="img-responsive" src="img/blog/1.jpg" alt="Blog Image" />
+								</div>
+								<!-- blog content details -->
+								<div class="entry-post">
+									<!-- blog title -->
+									<h3>Tonrich</h3>
+									<!-- paragraph -->
+									<p>Tonrich is focused on providing detailed information and insights into any TON
+										wallet. Imagine you see a wallet public key within an auction, and you have no
+										idea of how strong or weak is that wallet. <a class="learn-more"
+											href="https://github.com/tonradar/tonrich" target="_blank">Learn more..</a>
+									</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<!-- blog entry -->
+							<div class="entry">
+								<!-- blog post image -->
+								<div class="entry-pic">
+									<img class="img-responsive" src="img/blog/2.jpg" alt="Blog Image" />
+								</div>
+								<!-- blog content details -->
+								<div class="entry-post">
+									<!-- blog title -->
+									<h3>Galexy Clock</h3>
+									<!-- paragraph -->
+									<p>This clock shows you the time dynamically.
+										It gives you the feeling of an analog watch.. <a class="learn-more"
+											href="https://github.com/yunes1995/Galexy_Clock" target="_blank">Learn
+											more..</a></p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<!-- blog entry -->
+							<div class="entry">
+								<!-- blog post image -->
+								<div class="entry-pic">
+									<img class="img-responsive" src="img/blog/3.jpg" alt="Blog Image" />
+								</div>
+								<!-- blog content details -->
+								<div class="entry-post">
+									<!-- blog title -->
+									<h3>ToDo List</h3>
+									<!-- paragraph -->
+									<p>With this program, you can transfer your todo and your work in two lists on the
+										day you choose. <a class="learn-more" href="https://github.com/yunes1995/ToDo"
+											target="_blank">Learn more..</a></p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<!-- blog entry -->
+							<div class="entry">
+								<!-- blog post image -->
+								<div class="entry-pic">
+									<img class="img-responsive" src="img/blog/4.jpg" alt="Blog Image" />
+								</div>
+								<!-- blog content details -->
+								<div class="entry-post">
+									<!-- blog title -->
+									<h3>Calculator</h3>
+									<!-- paragraph -->
+									<p>Windows 10 calculator with new features. <a class="learn-more"
+											href="https://github.com/yunes1995/step3--Functionality-and-Themable"
+											target="_blank">Learn more..</a></p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<!-- footer -->
+		<footer>
+			<div class="container">
+				<!-- This theme comes under Creative Commons Attribution 4.0 Unported. So don't remove below link back -->
+				<p class="copy-right">Copyright &copy; 2023 <a href="#">Your Site</a> | Designed By : Yune Mohammadi,
+					All rights reserved. </p>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+
 </html>

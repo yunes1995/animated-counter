@@ -8,7 +8,6 @@ const getNumberThree = document.getElementById("numberThree");
 const getNumberFour = document.getElementById("numberFour");
 
 addEventListener("scroll", () => {
-    console.log(window.scrollY);
     if(window.scrollY > 650){
         if(starPositon == false){
             myInterval = setInterval(counterNumber, 100);

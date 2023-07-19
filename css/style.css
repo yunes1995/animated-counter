@@ -74,7 +74,9 @@ header .navbar-brand {
 header .navbar-brand img {
 	max-width:190px;
 	position: relative;
-	top: -11px;
+	top: -13px;
+	height: 44px;
+	box-shadow: 0 0 5px black;
 }
 .nav .open>a, .nav .open>a:hover, .nav .open>a:focus,
 header .navbar-default .navbar-nav>li>a {
@@ -98,6 +100,7 @@ header .navbar-form .form-control {
 	padding-top: 100px;
 	padding-bottom: 100px;
 	background: #fff url('../img/back.jpg') center center no-repeat fixed;
+	
 }
 .main-content.bottom-0 { padding-bottom: 0; }
 /*
@@ -121,16 +124,20 @@ header .navbar-form .form-control {
 	padding: 3px 12px;
 	font-size: 38px;
 	font-weight: 600;
-	background: #ec971f;
+	background: #5d60ffbd;
 	color: #fff;
+	border-radius: 7px;
 }
 
 .banner p {
 	margin-top: 15px;
-	font-size: 16px;
-	line-height: 30px;
-	text-transform: capitalize;
-	letter-spacing: 0.05em; 
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: capitalize;
+    letter-spacing: 0.05em;
+    color: darkblue;
+    font-weight: bold;
+    text-shadow: 0 0 5px darkgrey;
 }
 
 /* 
@@ -154,7 +161,7 @@ header .navbar-form .form-control {
 	text-transform: uppercase;
 	letter-spacing: 0.08em; 
 	font-style: italic;
-	color: #ec971f;
+	color: #3c763d;
 	font-size: 14px;
 }
 
@@ -203,7 +210,7 @@ header .navbar-form .form-control {
 	margin: 0 auto;
 	text-align: center;
 	font-size: 50px;
-	color: #ec971f;
+	color: #3c763d;
 }
 
 .benefits .benefits-item h3 {
@@ -238,7 +245,7 @@ header .navbar-form .form-control {
 	text-transform: uppercase;
 	letter-spacing: 0.08em; 
 	font-style: italic;
-	color: #ec971f;
+	color: #cb2121;
 }
 
 /*
@@ -289,7 +296,6 @@ header .navbar-form .form-control {
 .blog .entry .entry-pic {
 	max-width: 220px;
 	padding: 1px;
-	border: 1px solid #ec971f;
 	border-radius: 5px;
 	float: left;
 }
@@ -300,7 +306,7 @@ header .navbar-form .form-control {
 	margin-bottom: 10px;
 	font-size: 15px;
 	font-style: italic;
-	color: #ec971f;
+	color: firebrick;
 }
 
 .blog .entry .entry-post h3 {
@@ -366,7 +372,16 @@ header .navbar-form .form-control {
 .main-content .register-area form .btn {
 	margin-top: 5px;
 }
-
+.learn-more{
+	color: chocolate !important;
+	cursor: pointer;
+}
+.about-me-text{
+	color: white;
+    font-weight: bold;
+    /* font-size: 53px; */
+    text-shadow: 0 0 5px darkgreen;
+}
 /*
  * footer
  */
