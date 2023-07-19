@@ -1,4 +1,4 @@
-# animated-counter
+# Website with animated counter
 Designing a complete site as a sample:
 This designed sample is actually a portfolio, but other portfolios are also included in it.
 As it is clear from the name of the branch, the main topic of this example is about the dynamics of the available counters.
