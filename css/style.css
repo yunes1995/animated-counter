@@ -382,6 +382,66 @@ header .navbar-form .form-control {
     /* font-size: 53px; */
     text-shadow: 0 0 5px darkgreen;
 }
+/* couner menu */
+#toggle-btn,
+.menu a {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+.menu a {
+  background-color: #ffffff;
+  height: 40px;
+  width: 40px;
+  font-size: 18px;
+  color: #4249ed;
+  text-decoration: none;
+  top: 30px;
+  left: 30px;
+  transition: 0.5s;
+  display: none;
+  transition: all 0.5s;
+}
+#toggle-btn {
+  background-color: #0f1730;
+  color: #ffffff;
+  height: 48px;
+  width: 48px;
+  border: none;
+  font-size: 40px;
+  top: 2px;
+  left: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+  transition: all 0.3;
+}
+
+.buttonText{
+	font-size: 20px;
+}
+.activeMode {
+  transform: rotate(45deg);
+}
+
+#contact{
+	top: 70px;
+	left: 9px;
+	background-color: silver;
+	transition: all 0.5s;
+}
+#message{
+	top: 43px;
+	left: 65px;
+	background-color: silver;
+}
+#linkedin{
+	top: 2px;
+	left: 101px;
+	background-color: silver;	
+}
+
+
 /*
  * footer
  */

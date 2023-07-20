@@ -40,4 +40,23 @@ function counterNumber() {
         return;
     }
 }
+ // courner menu 
 
+let clickFlag = false;
+const cornerBtn = document.getElementById("toggle-btn");
+const contenButton = document.getElementById("contenButton");
+const menuItem = document.querySelectorAll(".menu a");
+
+
+
+cornerBtn.addEventListener("click", () =>{
+    clickFlag = true;
+    if(clickFlag == true) {
+        // contenButton.style.rotate = "45deg";
+        contenButton.classList.add("activeMode");
+       for(let i = 0; i < menuItem.length ; i++) {
+        menuItem[i].style.display = "grid";
+       }
+    }
+    console.log(menuItem);
+})
