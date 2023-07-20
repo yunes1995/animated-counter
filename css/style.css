@@ -245,7 +245,7 @@ header .navbar-form .form-control {
 	text-transform: uppercase;
 	letter-spacing: 0.08em; 
 	font-style: italic;
-	color: #cb2121;
+	color: green;
 }
 
 /*
@@ -397,7 +397,9 @@ footer p {
 	font-size: 13px;
 	line-height: 24px;
 }
-
+#progressIconOne, #progressIconTwo , #progressIconThree , #progressIconFour{
+	color: #cb2121;
+}
 /*
  * Responsive CSS 
  */
