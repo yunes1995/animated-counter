@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Animated Counter</title>
+	<title>DWD Site</title>
 	<!-- Description, Keywords and Author -->
 	<meta name="description" content="Your description">
 	<meta name="keywords" content="Your,Keywords">
@@ -297,22 +297,38 @@
 		</div>
 		<!--couner menu-->
 		<div class="menu">
-			<!-- <a href="#account" >
-				<i class="fas fa-user"></i>
-			</a> -->
-			<a href="#info" id="linkedin">
+			<a href="#info" id="linkedin" onclick="onlinkedin()">
 				<i class="fas fa-info"></i>
 			</a>
-			<a href="#message" id="message">
+			<a href="#message" id="message" onclick="onMessage()">
 				<i class="fas fa-comment-dots"></i>
 			</a>
-			<a href="#contact" id="contact">
+			<a href="#contact" id="contact" onclick="onConcat()">
 				<i class="fas fa-phone-alt"></i>
 			</a>
 			<button id="toggle-btn">
 				<i class="fas fa-plus buttonText" id="contenButton"></i>
 			</button>
 		</div>
+
+		<!--about me -->
+		<div id="concatInfo" onclick="offConcat()">
+			<div id="text">Tel : 0989012491519</div>
+		  </div>
+
+		  <div id="messageinfo" onclick="offMessage()">
+			<div id="text">Gmail : younesm837@gmail.com <br><br> Telegram id : Yunes_mohamadi74</div>
+		  </div>
+
+		  <div id="linkedinInfo" onclick="offlinkedin()">
+			<div id="text"><a href="https://www.linkedin.com/in/yunes-mohammadi-b58613233/" target="_blank">Linkedin</a> <br><br><a href="https://github.com/yunes1995" target="_blank">Github</a></div>
+		  </div>
+		  
+		  <!-- <div style="padding:20px">
+			<h2>Overlay with Text</h2>
+			<button onclick="on()">Turn on overlay effect</button>
+		  </div>
+		   -->
 
 		<!-- footer -->
 		<footer>
