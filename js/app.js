@@ -14,31 +14,31 @@ const getNumberThree = document.getElementById("numberThree");
 const getNumberFour = document.getElementById("numberFour");
 
 addEventListener("scroll", () => {
-    if (window.scrollY > 650) {
-        if (starPositon == false) {
-            myInterval = setInterval(counterNumber, 100);
-        }
-        starPositon = true;
+  if (window.scrollY > 650) {
+    if (starPositon == false) {
+      myInterval = setInterval(counterNumber, 100);
     }
+    starPositon = true;
+  }
 })
 
 function counterNumber() {
 
-    x++;
-    getNumberOne.innerText = x;
-    getNumberTwo.innerText = x;
-    getNumberThree.innerText = x;
-    getNumberFour.innerText = x;
+  x++;
+  getNumberOne.innerText = x;
+  getNumberTwo.innerText = x;
+  getNumberThree.innerText = x;
+  getNumberFour.innerText = x;
 
-    if (x == y) {
-        getprogressiconOne.style.color = "green";
-        getprogressiconTwo.style.color = "green";
-        getprogressiconThree.style.color = "green";
-        getprogressiconFour.style.color = "green";
-        getInprogressText.style.color = "red";
-        clearInterval(myInterval);
-        return;
-    }
+  if (x == y) {
+    getprogressiconOne.style.color = "green";
+    getprogressiconTwo.style.color = "green";
+    getprogressiconThree.style.color = "green";
+    getprogressiconFour.style.color = "green";
+    getInprogressText.style.color = "red";
+    clearInterval(myInterval);
+    return;
+  }
 }
 // courner menu 
 
@@ -51,53 +51,76 @@ const menuItem = document.querySelectorAll(".menu a");
 
 cornerBtn.addEventListener("click", () => {
 
-    if (!clickFlag) {
-        cornerBtn.classList.add("activeMode");
-        menuItem[0].style.transform = "translate(2px, 101px)";
-        menuItem[1].style.transform = "translate(43px, 59px)";
-        menuItem[2].style.transform = "translate(70px, 9px)";
-        // for (let i = 0; i < menuItem.length; i++) {
-        //     menuItem[i].style.display = "grid";
-        // }
-        clickFlag = true;
-    }
+  if (!clickFlag) {
+    cornerBtn.classList.add("activeMode");
+    menuItem[0].style.transform = "translate(2px, 101px)";
+    menuItem[1].style.transform = "translate(43px, 59px)";
+    menuItem[2].style.transform = "translate(70px, 9px)";
+    // for (let i = 0; i < menuItem.length; i++) {
+    //     menuItem[i].style.display = "grid";
+    // }
+    clickFlag = true;
+  }
 
-    else{
-        cornerBtn.classList.remove("activeMode");
-        menuItem[0].style.transform = "translate(0, 0)";
-        menuItem[1].style.transform = "translate(0, 0)";
-        menuItem[2].style.transform = "translate(0, 0)";
-        clickFlag = false;
-    }
-  
+  else {
+    cornerBtn.classList.remove("activeMode");
+    menuItem[0].style.transform = "translate(0, 0)";
+    menuItem[1].style.transform = "translate(0, 0)";
+    menuItem[2].style.transform = "translate(0, 0)";
+    clickFlag = false;
+  }
+
 })
 
 // anout me 
 function on() {
-    document.getElementById("overlay").style.display = "block";
-  }
-  
-  function onConcat() {
-    document.getElementById("concatInfo").style.display = "block";
-  }
-  function offConcat() {
-    document.getElementById("concatInfo").style.display = "none";
-  }
+  document.getElementById("overlay").style.display = "block";
+}
 
-  function onMessage() {
-    document.getElementById("messageinfo").style.display = "block";
-  }
-  function offMessage() {
-    document.getElementById("messageinfo").style.display = "none";
-  }
+function onConcat() {
+  document.getElementById("concatInfo").style.display = "block";
+}
+function offConcat() {
+  document.getElementById("concatInfo").style.display = "none";
+}
 
-  function onlinkedin() {
-    document.getElementById("linkedinInfo").style.display = "block";
-  }
-  function offlinkedin() {
-    document.getElementById("linkedinInfo").style.display = "none";
-  }
+function onMessage() {
+  document.getElementById("messageinfo").style.display = "block";
+}
+function offMessage() {
+  document.getElementById("messageinfo").style.display = "none";
+}
+
+function onlinkedin() {
+  document.getElementById("linkedinInfo").style.display = "block";
+}
+function offlinkedin() {
+  document.getElementById("linkedinInfo").style.display = "none";
+}
 
 
+function onConcatAboutMe() {
+  document.getElementById("concatInfoAbout").style.display = "block";
+}
+function offConcatAboutMe() {
+  document.getElementById("concatInfoAbout").style.display = "none";
+}
+
+// about me section
+const blueBtn = document.getElementById("blue-btn").addEventListener("click", () => {
+  document.documentElement.style.setProperty('--theme-color', '#3498db');
+});
+const redBtn = document.getElementById("red-btn").addEventListener("click", () => {
+  document.documentElement.style.setProperty('--theme-color', '#ff1756');
+});
+const greemBtn = document.getElementById("green-btn").addEventListener("click", () => {
+  document.documentElement.style.setProperty('--theme-color', '#1cb65d');
+});
+const purpelBtn = document.getElementById("purpel-btn").addEventListener("click", () => {
+  document.documentElement.style.setProperty('--theme-color', '#8e44ad');
+});
+const yellowBtn = document.getElementById("yellow-btn").addEventListener("click", () => {
+  document.documentElement.style.setProperty('--theme-color', '#f4b932');
+});
 
 

@@ -64,14 +64,19 @@
 							</li>
 							<li><a href="https://github.com/yunes1995" target="_blank">My Github</a></li>
 							<li><a href="registration.html">My Linkedin</a></li>
+							<li><a href="#" onclick="onConcatAboutMe()">Yunes</a></li>
 						</ul>
 						<form class="navbar-form navbar-right" role="search">
 							<div class="form-group">
 								<input type="text" class="form-control" placeholder="Search">
 							</div>
 						</form>
+						<!-- <div>
+							<div>Yune</div>
+						</div> -->
 					</div><!-- /.navbar-collapse -->
 				</div><!-- /.container-fluid -->
+
 			</nav>
 		</header>
 
@@ -314,21 +319,47 @@
 		<!--about me -->
 		<div id="concatInfo" onclick="offConcat()">
 			<div id="text">Tel : 0989012491519</div>
-		  </div>
+		</div>
 
-		  <div id="messageinfo" onclick="offMessage()">
+		<div id="messageinfo" onclick="offMessage()">
 			<div id="text">Gmail : younesm837@gmail.com <br><br> Telegram id : Yunes_mohamadi74</div>
-		  </div>
+		</div>
 
-		  <div id="linkedinInfo" onclick="offlinkedin()">
-			<div id="text"><a href="https://www.linkedin.com/in/yunes-mohammadi-b58613233/" target="_blank">Linkedin</a> <br><br><a href="https://github.com/yunes1995" target="_blank">Github</a></div>
-		  </div>
-		  
-		  <!-- <div style="padding:20px">
-			<h2>Overlay with Text</h2>
-			<button onclick="on()">Turn on overlay effect</button>
-		  </div>
-		   -->
+		<div id="linkedinInfo" onclick="offlinkedin()">
+			<div id="text"><a href="https://www.linkedin.com/in/yunes-mohammadi-b58613233/" target="_blank">Linkedin</a>
+				<br><br><a href="https://github.com/yunes1995" target="_blank">Github</a></div>
+		</div>
+
+		<!--Yunes profile-->
+
+		<div id="concatInfoAbout">
+			<div class="colse-about-me" onclick="offConcatAboutMe()">&#x2715</div>
+			<div class="container-aboutMe">
+				<div class="card">
+					<img src="./img/yunes.jpg" alt="profile_img">
+					<h4>Yunes Mohammadi</h4>
+					<h5>junior Web Developer</h5>
+					<div class="details">
+						<p>City : <span>Kermanshah</span></p>
+						<p>Number : <span>0989012491519</span></p>
+						<p>Gmail: <span>younesm837@gmail.com</span></p>
+
+
+
+					</div>
+				</div>
+				<div class="themes">
+					<button class="btn btn1" id="blue-btn"></button>
+					<button class="btn btn2" id="red-btn"></button>
+					<button class="btn btn3" id="green-btn"></button>
+					<button class="btn btn4" id="purpel-btn"></button>
+					<button class="btn btn5" id="yellow-btn"></button>
+				</div>
+			</div>
+		</div>
+
+
+
 
 		<!-- footer -->
 		<footer>
